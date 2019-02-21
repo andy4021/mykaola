@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>购物车</title>
+<link rel="shortcut icon" href="img/bitbug_favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/goods.css"/>
+</head>
+<body>
+	<nav>
+		<div class="top">
+			<div id='loginBox' class="naa">
+				<span class="nab">考拉欢迎你！</span>
+				<a class="login" href="loginCheck.html">登录</a>
+				<a target="_blank" href="reg.html">免费注册</a>
+				<a class="app" href="##">手机考拉					
+					 <img src="img/i01.png"/>
+				</a>
+			</div>
+			<div id='welcomeBox' class="naa">
+				<span class="nab">您好，</span>
+				<span class="nab login"  id="usernameSpan"></span>
+				<a id="btnLogout" href="shoplist.html">退出</a>
+				<a class="app" href="##">手机考拉					
+					 <img src="img/i01.png"/>
+				</a>
+			</div>
+			<div class="right">
+				<ul>
+					<li class="aaaa">
+						<a class="acc" href="##">每日签到</a>
+					</li>
+					<li class="aaaa bbbb">
+						<a class="acc" href="##">我的订单</a>
+					</li>
+					<li class="aaaa cccc">
+						<a class="nac" href="##"><span class="words">个人中心<span class="san"></span></span>			
+						</a>						
+						<ul class="under_a">
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>							
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">售后管理</a>
+							</li>
+						</ul>			
+					</li>
+					<li class="aaaa cccc">
+						<a class="nac" href="##"><span class="words">客户服务<span class="san"></span></span></a>
+						<ul class="under_a">
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>							
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">售后管理</a>
+							</li>
+						</ul>
+					</li>
+					<li class="aaaa cccc">
+						<a class="nac" href="##"><span class="words">充值中心<span class="san"></span></span></a>
+						<ul class="under_a">
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>							
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">售后管理</a>
+							</li>
+						</ul>
+					</li>
+					<li class="aaaa cccc">
+						<a class="nac nae" href="##"><span class="words">消费者权益<span class="san"></span></span></a>
+						<ul class="under_a">
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>							
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">售后管理</a>
+							</li>
+						</ul>
+					</li>
+					<li class="aaaa cccc">
+						<a class="nac nad" href="##"><span class="words">更多<span class="san"></span></span></a>
+						<ul class="under_a">
+							<li>
+								<a href="#">收藏本站</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>							
+							</li>
+							<li>
+								<a href="#">我的优惠券</a>
+								<a href="#">我的优惠券</a>
+								<i></i>
+							</li>
+							<li>
+								<a href="#">售后管理</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</nav>
+	<header>
+		<a class="hhh" href="##" title="网易考拉"><img src="img/i02.png" /></a>		
+	</header>
+	<section>
+		<div class="sec">	
+			<div class="topa">
+				<h4 class="toa">我的购物车<span id="tob"></span></h4>
+				<div class="tof">
+					<span class="toc">配送至</span>
+					<div class="addr">
+						<span class="tod">北京/中南海</span>
+						<span class="toe"></span>
+					</div>
+				</div>
+			</div>
+			<div class="goods">
+				<form>
+					<div class="bbb">
+						<div class="baa">
+							<input type="checkbox" id="selectAll" class="selectAll check"/>
+							<label class="lab" for="selectAll">全选</label>
+						</div>
+						<div class="bab">
+							<span>商品信息</span>
+							<span>单价(元)</span>
+							<span>数量</span>
+							<span>金额(元)</span>
+							<span>操作</span>
+						</div>
+					</div>
+					<div class="bbb bcd">
+						<div class="bca">
+							<input type="checkbox" class="selectAll check"/>
+							<span class="bcb">自营</span>
+							<strong class="bcc">自营直营仓</strong>
+						</div>					
+					</div>
+					<ul class="shp" id="list">
+						<li class="shpa">
+							<div class="shpb">
+								<div class="shpc">
+									<input type="checkbox" class="check chec"/>
+									<div class="shpd">
+										<img class="imgs" src="img/goods/g01.jpg" alt=""/>
+										<div class="shpe">
+											<a class="shpf" href="#" title="Calvin Klein 卡文克莱  ONE 中性淡香水 100毫升">Calvin Klein 卡文克莱  ONE 中性淡香水 100毫升</a>
+											<img src="img/goods/g01.png" alt=""/>
+											<span class="shpg">支持30天无忧退货</span>
+											<p class="shph">包税<span class="shpi"></span></p>
+										</div>
+									</div>
+								</div>
+								<div class="price">
+									<p>510.00</p>
+									<p>178.00</p>
+								</div>
+								<div class="count">
+									<div class="texa">
+										<img class="reduceCls" src="img/goods/g05.png" alt=""/>
+										<input class="text" type="text" placeholder="1" />
+										<img class="addcls" src="img/goods/g06.png" alt=""/>
+									</div>
+								</div>
+								<div class="gold">
+									<p class="gold_a">178.00</p>
+									<span class="gold_b"></span>
+								</div>
+								<div class="move">
+									<p class="delet">删除</p>
+									<p class="adda">移入我的收藏</p>
+								</div>
+							</div>
+						</li>
+						<li class="shpa">
+							<div class="shpb">
+								<div class="shpc">
+									<input type="checkbox" class="check chec"/>
+									<div class="shpd">
+										<img class="imgs" src="img/goods/g01.jpg" alt=""/>
+										<div class="shpe">
+											<a class="shpf" href="#" title="Calvin Klein 卡文克莱  ONE 中性淡香水 100毫升">Calvin Klein 卡文克莱  ONE 中性淡香水 100毫升</a>
+											<img src="img/goods/g01.png" alt=""/>
+											<span class="shpg">支持30天无忧退货</span>
+											<p class="shph">包税<span class="shpi"></span></p>
+										</div>
+									</div>
+								</div>
+								<div class="price">
+									<p>510.00</p>
+									<p>178.00</p>
+								</div>
+								<div class="count">
+									<div class="texa">
+										<img class="reduceCls" src="img/goods/g05.png" alt=""/>
+										<input class="text" type="text" placeholder="1" />
+										<img class="addcls" src="img/goods/g06.png" alt=""/>
+									</div>
+								</div>
+								<div class="gold">
+									<p class="gold_a">178.00</p>
+									<span class="gold_b"></span>
+								</div>
+								<div class="move">
+									<p class="delet">删除</p>
+									<p class="adda">移入我的收藏</p>
+								</div>
+							</div>
+						</li>
+						<div class="end_b">
+							<p>
+								<span>活动优惠：-￥</span><span class="ena">0.00</span>
+								<span>商品应付总计：</span><span id="spanTotalMoney" class="ena enb">￥178.00</span>
+								<span>预估税费：￥</span><span class="ena enc">0.00</span>
+							</p>
+						</div>
+					</ul>
+					<div class="ggg">
+						<div class="gga">
+							<input type="checkbox" id="selectAl" class="selectAll check"/>
+							<label class="lab" for="selectAl">全选</label>
+							<span>删除选中商品</span>
+						</div>
+						<div class="ggb">
+							<p class="ggba">
+								<span class="ggd">已勾选商品<span class="ggc">0</span>件</span>
+								<span>总计（不含运费）：</span><span class="ggc">￥0.00</span>
+							</p>
+							<p class="ggbb">
+								<span>活动优惠：-￥</span><span class="ena">0.00</span>
+								<span>商品应付总计：</span><span class="ena">0.00</span>
+								<span>预估税费：￥</span><span class="ena gge">0.00</span>
+							</p>
+							<a class="ggbc">去结算</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+
+
+
+
+
+	</section>
+	<div class="foot_top">
+		<div class="top_bb">
+			<div class="top_bb_aa">
+				<img src="img/z12.png" alt=""/>
+				<div class="detail">
+					<p>100%正品</p>
+					<p>正品保障 假一赔十</p>
+				</div>
+			</div>
+			<div class="top_bb_aa">
+				<img src="img/z12.png" alt=""/>
+				<div class="detail">
+					<p>100%正品</p>
+					<p>缩减中间环节 确保低价</p>
+				</div>
+			</div>
+			<div class="top_bb_aa">
+				<img src="img/z12.png" alt=""/>
+				<div class="detail">
+					<p>100%正品</p>
+					<p>国内退货 售后无忧</p>
+				</div>
+			</div>
+			<div class="top_bb_aa">
+				<img src="img/z12.png" alt=""/>
+				<div class="detail">
+					<p>100%正品</p>
+					<p>部分特殊商品除外</p>
+				</div>
+			</div>
+		</div>
+		<div class="top_cc">
+			<div class="bottom_left">
+				<img src="img/z13.png" title="网易考拉" alt=""/>
+				<div>
+					<span>关注我们</span>
+					<div class="conect">
+						<a class="hovv" href="#"><img class="conect_img" src="img/z14.png" alt=""/><img class="con_a" src="img/z15.png" alt=""/></a>
+						<a class="hovv" href="#"><img class="conect_img" src="img/z14.png" alt=""/><img class="con_a" src="img/z15.png" alt=""/></a>
+						<a class="hovv" href="#"><img class="conect_img" src="img/z14.png" alt=""/><img class="con_a" src="img/z15.png" alt=""/></a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="bottom_center">
+				<ul>
+					<li>考拉保障</li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">廉政监督</a></li>
+				</ul>
+				<ul>
+					<li>新手指南</li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+				</ul>
+				<ul>
+					<li>售后服务</li>
+					<li><a href="#">退货政策</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+				</ul>
+				<ul>
+					<li>物流配送</li>
+					<li><a href="#">配送方式</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+				</ul>
+				<ul>
+					<li>关于我们</li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+					<li><a href="#">假一赔十</a></li>
+				</ul>
+			</div>
+			<div class="bottom_right">
+				<img src="img/z16.png" alt=""/>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="foot">
+			<div class="foa">
+				<a href="http://ir.netease.com/phoenix.zhtml?c=122303&p=irol-IRHome&no_protofix">About NetEase</a>-<a href="http://gb.corp.163.com/gb/about/overview.html?no_protofix">公司简介</a>-<a href="http://gb.corp.163.com/gb/contactus.html?no_protofix">练习方法</a>-<a href="https://www.kaola.com/footer/friendlylink.shtml?zn=footer">友情链接</a>-<a href="https://hr.163.com/?no_protofix">招聘信息</a>-<a href="https://help.mail.163.com/service.html">客户服务</a>-<a href="http://gb.corp.163.com/gb/legal.html?no_protofix">隐私政策</a>-<a href="http://emarketing.163.com/?no_protofix">网络营销</a>-<a href="https://www.kaola.com/?zn=footer">网易考拉</a>
+			</div>
+			<div class="fob">
+				<span>网络文化经营许可证：浙网文[2016]0155-055号</span><span>增值电信业务经营许可证：浙B2-20160288</span><span><a href="https://pages.kaola.com/pages/activity/Businessentity.shtml">自营经营者信息</a></span><span>（浙）网械平台备字[2018]第00007号</span>
+			</div>
+			<div class="foc">
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802002216&no_pro"><img src="img/z08.png" alt="">浙公网安备 33010802002216号 </a><span>网易公司版权所有©1997-2019</span>
+				<a href="https://haitao.nos.netease.com/d37ac4eb-016f-485b-9577-04ae7e0f4bbd.jpg">互联网药品信息服务资格证书编号（浙）-2017-0027 </a><span>浙ICP备16011229号-6</span>
+			</div>
+			<div class="fod">
+				<a href="https://ss.knet.cn/verifyseal.dll?sn=e15040881010058239iy2f000000&ct=df&a=1&pa=20160215"><img src="img/is100.png" alt="" /></a><a href="http://idinfo.zjaic.gov.cn/bscx.do?method=lzxx&id=3301083301980000040550&no_protofix"><img src="img/is101.png" /></a><a href="http://idinfo.zjaic.gov.cn/bscx.do?method=lzxx&id=3301083301980000040550&no_protofix"><img src="img/is102.png" /></a>
+			</div>
+		</div>		
+	</footer>
+</body>
+</html>
+<script type="text/javascript" src="js/cssTools.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript">
+
+function changeCount(btn,sign){
+	//一、改数量
+	//1、取数量
+	var count = Number(btn.parentNode.children[1].value);
+	//2、增加
+	if(sign!=null){
+		sign=="+"?count++:count--;
+		if(count<1){
+			return;
+		}
+
+	}
+	//3、赋值
+	btn.parentNode.children[1].value = count;
+	//二、改金额
+	//1、获取单价和金额
+	var price = parseFloat(btn.parentNode.parentNode.previousElementSibling.children[1].innerHTML);
+	//2、计算金额
+	var money= (price*count).toFixed(2);
+	//3、赋值
+	btn.parentNode.parentNode.nextElementSibling.firstElementChild.innerHTML = money;
+	//三、改总金额
+	//1、获取总金额
+	// var totalMoney = parseFloat(($("#spanTotalMoney").innerHTML).substring(1));
+	//2、计算总金额
+	// sign=="+"?(totalMoney += price):(totalMoney -= price);
+	//3、赋值
+	// $(".spanTotalMoney").innerHTML = "￥"+totalMoney;
+}
+
+//
+function saveData(){
+	//1、从界面上获取数据成为json数组,并转成字符串
+	var trs = $("#t").rows;
+	var arr=[];
+	//循环所有的行，
+	for(var i=1;i<trs.length-1;i++){
+		//把每一行中的数据放在json对象里，
+		var goods={
+			"id":trs[i].cells[0].innerHTML,
+			"name":trs[i].cells[1].innerHTML,
+			"price":parseFloat(trs[i].cells[2].innerHTML),
+			"count":trs[i].cells[3].children[1].innerHTML
+		};
+		//把json对象放在数组里
+		arr.push(goods);
+	}
+	var str = JSON.stringify(arr);
+
+	//2、存cookie
+	saveCookie('goodslist',str,7);
+}
+
+function getData(){
+
+	//1、从cookie拿
+	var str =  getCookie('goodslist');
+	alert(str);
+	if(str==null){
+		return;
+	}
+	var arr = JSON.parse(str);
+	//2、显示在页面上
+	var trs = $("#t").rows;
+	var totalMoney=0;
+	for(var i=0;i<arr.length;i++){
+		trs[i+1].cells[0].innerHTML=arr[i].id;
+		trs[i+1].cells[1].innerHTML=arr[i].name;
+		trs[i+1].cells[2].innerHTML=arr[i].price+"$";
+		trs[i+1].cells[3].children[1].innerHTML=arr[i].count;
+		var money = arr[i].price*arr[i].count;
+		trs[i+1].cells[4].children[0].innerHTML =money;
+		totalMoney+=money;
+	}
+	$("#spanTotalMoney").innerHTML = totalMoney;
+}
+
+window.onload = function(){
+	//1、从cookie中获取数据
+	// getData();
+
+	//2、给加号按钮绑定事件
+	var addBtns = $(".addcls");
+	for(var i=0;i<addBtns.length;i++){
+		addBtns[i].onclick = function(){
+			changeCount(this,"+");
+		}
+	}
+
+	//3、给减号按钮绑定事件
+	var reduceBtns = $(".reduceCls");
+	for(var i=0;i<reduceBtns.length;i++){
+		reduceBtns[i].onclick = function(){
+			changeCount(this,"-");
+		}
+	}
+	//4、给保存按钮绑定事件
+	// $("#btnSave").onclick = saveData;
+
+	var inputs = $(".text");
+	for(var i=0;i<inputs.length;i++){
+		inputs[i].onchange = function(){
+			changeCount(this);
+		}
+	}
+	
+	showWelcomeBox();
+	$("#btnLogout").click(function(){
+		removeCookie('username');
+	});
+}
+		var tab = $("#t");
+		var del = $(".delet");
+		for (var i in del) {
+			del[i].onclick = function () {
+				if (confirm("真的要删除吗？")) {
+					chang(this);
+				}
+			}
+		}
+		function chang(g) {
+			let strs = g.parentNode.parentNode.parentNode;
+			strs.style.opacity = chanStyle(strs);
+		}
+
+		function chanStyle(str) {
+			let currOpacity = 1;
+			let myTimer = setInterval(function () {
+				//一、处理数据
+				//1、改变数据
+				currOpacity -= 0.01;
+				//2、数据合法性（边界处理）
+				if (currOpacity <= 0) {
+					currOpacity = 0;
+					if (currOpacity == 0) {
+						str.remove();
+						// calTotal();
+					}
+					window.clearInterval(myTimer);
+				}
+				//二、改变外观
+				str.style.opacity = currOpacity;
+			}, 10);
+		}
+
+
+
+
+function showWelcomeBox(){
+	var $username = getCookie('username');
+	if($username!=null){
+		$username=$username.replace($username.substring(3,7),"****");
+		$("#usernameSpan").html($username);
+		$("#welcomeBox").css("display","block");
+	}else{
+		$("#loginBox").css("display","block");
+	}
+}	
+
+// window.onload = function () {
+
+
+	// showWelcomeBox();
+	// $("#btnLogout").click(function(){
+	// 	removeCookie('username');
+	// });
+
+  //   let $topTimer = setInterval(function(){
+		// let $offsetY = document.body.scrollTop|| document.documentElement.scrollTop;
+		// let $offsetY1=$("#right_nav2").offset().top-44;
+		// let $offsetX2=$("#right_nav1").offset().left+$("#right_nav1").outerWidth()+15;
+		// console.log($offsetX2);
+		// if($offsetY>$offsetY1){
+
+		// 	$("#right_nav").css("display","block");
+		// 	$("#right_nav").css("left",$offsetX2);
+		// 	$("#right_nav").css("top", 66);
+		// 	$("#right1").css("display","none");
+		// }else{
+		// 	$("#right_nav").css("display","none");
+		// 	$("#right1").css("display","block");
+		// }
+  //   },50);
+				
+    
+ // }
+//商品列表
+	// $(function(){
+	// 	$.ajax({ 
+	// 		url: "getGoodsList.php", 
+	// 		type:"get",
+	// 		dataType:"json",
+	// 		async:true,
+	// 		date:{},
+	// 		success: function(data){
+	// 		    console.log("------success------")
+	// 		    console.log(data)
+	// 		    for(let i=0;i<data.length;i++){			    	
+	// 				let str = "\
+	// 				<div class='shop'>\
+	// 					<a href='#'><img src='"+data[i].goodsImg+"'' alt=''/></a>\
+	// 					<div class='opp'>\
+	// 						<div class='boox'>\
+	// 							<img src='"+data[i].beiyong1+"' alt=''/>\
+	// 							<img src='"+data[i].beiyong1+"' alt=''/>\
+	// 							<img src='"+data[i].beiyong1+"' alt=''/>\
+	// 							<img src='"+data[i].beiyong1+"' alt=''/>\
+	// 							<img src='"+data[i].beiyong1+"' alt=''/>\
+	// 						</div>\
+	// 						<div class='clear'></div>\
+	// 						<p>\
+	// 							<span class='boaa'>￥</span>\
+	// 							<span class='boab'>"+data[i].goodsPrice+"</span>\
+	// 							<span class='boac'>"+data[i].goodsDesc+"</span>\
+	// 						</p>\
+	// 						<a class='boad' href='#'>"+data[i].goodsName+"</a>\
+	// 						<img src='"+data[i].beiyong2+"' alt=''/>\
+	// 					</div>\
+	// 				</div>"
+	// 				$(".list").append(str);
+	// 		    }   
+	// 		},
+	// 		error: function(data){
+	// 		    console.log("------error------")
+	// 		    console.log(data)
+	// 		}
+	// 	});
+
+	// });
+
+
+
+</script>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+jQuery.fn.extend({    
+    bindCheck:function($subCheckbox,$unCheckBtn){
+        let $fatherCheckBox = this;
+        //1、全选//this是bindCheck的所属对象
+        this.click(function(){
+            let isCheck = this.checked;//this事件源
+            $subCheckbox.each(function(){
+                this.checked = isCheck;
+            });
+        });
+        
+
+        //3、关联（子控制父）
+        $subCheckbox.click(function(){
+            changeFatherCheckbox();
+        });
+
+        //控制父复选框的状态
+        function changeFatherCheckbox(){
+            let isAllCheck = true;//假定全部子复选框是选中状态
+            
+            $subCheckbox.each(function(){
+                if(!this.checked){
+                    isAllCheck = false;
+                }
+            });
+            $fatherCheckBox.attr("checked",isAllCheck);
+        }
+    }
+});
+
+//主函数
+$(function(){
+    //父复选框.bindCheck(所有的子复选框，反选按钮);
+   $(".selectAll").bindCheck($("#list :checkbox"));
+    // $("#checkedAllId").bindCheck($("#list :checkbox"));
+});
+ 
+</script>

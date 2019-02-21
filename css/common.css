@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+* {padding: 0;margin: 0;}
+body {margin: 0px;padding: 0px;min-width:1200px;}
+
+/*相关样式*/
+#showbox { background:#eee;}
+#showbox div{
+	border:1px solid #eeeeee;
+}
+#showbox p{
+	border:1px solid #eeeeee;
+	z-index: 100;
+}
+#showbox span { background:black;opacity: 0.3;}
+#showsum { left:35px; margin-top:25px;}
+#showsum span { border:1px solid #ddd;}
+#showsum span.sel { border:3px solid #e31436;box-sizing:border-box;}
+
+.showpage { width:400px; position:relative;}
+.showpage a { display:block; width:33px; border:1px solid #ddd; height:64px; line-height:64px; text-align:center; font-size:18px; position:absolute; left:0; top:-66px; text-decoration:none; color:#999;}
+.showpage #shownext { left:auto; right:0;}
+.showpage a:hover { border-color:#e31436; color:#777;}
+
